@@ -12,9 +12,9 @@ class SnakePuzzleTest < Test::Unit::TestCase
   end
 
   def test_my_position_1_size_1_to_11
-    (1..11).each do |size|
+    (2..11).each do |size|
       args_t = generate_my_turn_in_args_table(size, 1)
-      results = (0..(size - 1)).to_a.reverse
+      results = (0..((size - 1) * 2 + 1)).to_a.reverse
       assert_my_turn_in_results args_t, results
     end
   end
@@ -23,7 +23,7 @@ class SnakePuzzleTest < Test::Unit::TestCase
     results = [
       [1, 7, 6, 5, 4, 3, 2, 1, 3, 2],
       [2, 1, 5, 4, 3, 2, 1, 5, 4, 3],
-      [2, 1, 5, 4, 3, 2, 1, 5, 4, 3],
+      [3, 2, 1, 3, 2, 1, 7, 6, 5, 4],
       [4, 3, 2, 1, 0, 9, 8, 7, 6, 5]
     ]
 
