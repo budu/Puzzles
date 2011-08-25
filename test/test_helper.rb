@@ -27,7 +27,8 @@ class Test::Unit::TestCase
 
   def assert_my_turn_in_results(args_t, results)
     args_t.zip(results).each do |(args, result)|
-      assert_equal result, my_turn_in(*args)
+      assert_equal(result, my_turn_in(*args),
+                   "Called my_turn_in with *#{args.inspect} as argument")
     end
   end
 
