@@ -3,6 +3,8 @@ module SnakePuzzle
 
   # Returns the number of turn before my next turn in a snake draft.
   #
+  # Position arguments starts at 1.
+  #
   # @param my_position [Integer] The position of my team.
   # @param current_position [Integer] The position of the team currently
   #   playing.
