@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
-require File.dirname(__FILE__) + '/test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
+require File.dirname(__FILE__) + '/snake_helper'
 
-class SnakePuzzleTest < Test::Unit::TestCase
-
-  include SnakePuzzle
+class Puzzles::SnakeTest < Test::Unit::TestCase
 
   def test_size_1
     [:forward, :same, :backward].each do |d|
