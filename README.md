@@ -24,4 +24,4 @@ You can now start coding! To validate your solution, you can run the
 tests for an individual puzzle using the test suite. To the Snake
 `my_turn_in` puzzle for example run:
 
-    ruby test/puzzles/snake/my_turn_in_test.rb
+    ruby ./test/puzzles/snake/my_turn_in_test.rb
