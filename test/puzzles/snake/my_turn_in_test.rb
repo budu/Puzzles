@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
-require File.dirname(__FILE__) + '/../test_helper'
-require File.dirname(__FILE__) + '/snake_helper'
+require File.dirname(__FILE__) + '/../../test_helper'
+require File.dirname(__FILE__) + '/my_turn_in_helper'
 
-class Puzzles::SnakeTest < Test::Unit::TestCase
+class Puzzles::Snake::MyTurnInTest < Test::Unit::TestCase
 
   def test_size_1
     [:forward, :same, :backward].each do |d|
