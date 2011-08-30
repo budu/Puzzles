@@ -28,7 +28,7 @@ module Puzzles
     # @param current_position [Integer] The position of the team currently
     #   playing.
     # @param current_direction [Symbol] The direction of the team
-    #   currently playing.
+    #   currently playing, can be one of :backward, :same or :forward.
     # @param size [Integer] The number of teams.
     # @return [Integer] The number of turn before my next turn.
     def my_turn_in(my_position,
