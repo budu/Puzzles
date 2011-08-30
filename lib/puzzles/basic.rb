@@ -1,7 +1,7 @@
 
 module Puzzles
 
-  # A bunch of basic programming puzzle which doesn't have any context.
+  # A bunch of basic programming puzzles which doesn't have any context.
   module Basic
 
     # Returns the sum of the squares of the two biggest argument
